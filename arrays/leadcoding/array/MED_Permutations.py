@@ -27,14 +27,14 @@ Recursion likhne ka tarika ye hai ki sabse pehle ek sabse chota sa case utha lo 
 aage tak jaise [2,3] -> [3,2] [2,3] kaise aayenge
 
 Another way of looking at is we know from set theory that there are N! permutations of a list of size N.
-We also know that the permutations are going to be the leaves of the tree,
+We also know that the permutations are going to be the leaves of the Tree,
 which means we will have N! leaves. In order to get to each one of those leaves, we had to go through N calls.
 That's O(N*N!). Again a little more than the total number of nodes because some nodes are shared among more than one path.
 
 Space: O(N!)
 
 Because you still need to store the permutations and there are N! of them even if the depth of the stack is maxed out
-at N+1 (depth of the recursion space-tree is also N+1)
+at N+1 (depth of the recursion space-Tree is also N+1)
 
 """
 

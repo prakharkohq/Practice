@@ -37,7 +37,7 @@ The given word can start from any cell.
 So, We have to traverse each cell of the board. So, it will take nm time for two for loops.
 For each cell we will try to find the given word, we have 3 direction to explore (as we can't go to the direction
 from which we came so there are 3 posibilities)
-The max depth of the recursion tree can be the length of the given word (let length be k)
+The max depth of the recursion Tree can be the length of the given word (let length be k)
 So, considering the depth (k) and and 3 direction to explore the TC for each cell will come out to be 3^k
 So, the overall time complexity will be O(n * m * (3^k))  
 """

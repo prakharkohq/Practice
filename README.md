@@ -1,20 +1,14 @@
-#Leetcode Practice 
+#DSA Practice Problems
 
-This repo contains topic wise practice code for my leetcode submissions 
+This Repository contains topic wise most famous interview problems, at times multiple approaches are also mentioned on 
+questions
+
 
 Problems are curated from 
-* leadcoding
-* neetcode
-* DSA450
+* [Leadcoding](https://leadcoding.in/dsa-sheet/)
+* [Neetcode](https://neetcode.io/)
+* [DSA450](https://450dsa.com/)
 
 
-Mainly practicing in  ``` Python ``` , ``` JAVA ``` <br /> 
+Mainly practicing in  ``` Python ``` , ``` JAVA ``` 
 
-Please checkout these useful websites
--https://neetcode.io/ 
--https://leadcoding.in/dsa-sheet/
--https://450dsa.com/
-
-To Check Frequency of the question w.r.t companies use 
-
--https://github.com/hxu296/leetcode-company-wise-problems-2022/blob/main/data/leetcode_problems_and_companies.csv
