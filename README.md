@@ -1,4 +1,4 @@
-#DSA Practice Problems
+# DSA Practice Problems
 
 This Repository contains topic wise most famous interview problems, at times multiple approaches are also mentioned on 
 questions
