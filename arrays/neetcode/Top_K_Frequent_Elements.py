@@ -34,11 +34,9 @@ def top_k_frequent_items(arr, count):
 
 """
 O(n) Solution 
-
-
 """
 
-
+# bucket sort jaisa hai ye
 def topKFrequent(nums, k):
     count = {}
     freq = [[] for i in range(len(nums) + 1)]
@@ -60,4 +58,4 @@ def topKFrequent(nums, k):
 
 if __name__ == "__main__":
     print("Top K frequent element")
-    print(topKFrequent([3,0,1,0], 3))
+    print(topKFrequent([1,1,1,2,2,3], 3))

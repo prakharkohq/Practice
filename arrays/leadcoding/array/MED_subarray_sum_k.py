@@ -52,7 +52,8 @@ def subarraySum(nums, k):
         if diff in d:  # if diff is in the dictionary d, increment the count by the value of d[diff]
             count += d[diff]
 
-        if sum_so_far in d:  # if sum_so_far is in the dictionary d, increment its value by 1, otherwise add a new key-value pair to d
+        if sum_so_far in d:  # if sum_so_far is in the dictionary d, increment its value by 1, otherwise
+                             # add a new key-value pair to d
             d[sum_so_far] += 1
         else:
             d[sum_so_far] = 1

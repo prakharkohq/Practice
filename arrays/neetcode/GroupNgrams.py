@@ -55,5 +55,5 @@ def group_anagrams_soln(strs):
 
 
 if __name__ == "__main__":
-    results = group_anagrams(["duh","ill","eat","tea","tan","ate","nat","bat"])
+    results = group_anagrams_soln(["duh","ill","eat","tea","tan","ate","nat","bat"])
     print(results)
