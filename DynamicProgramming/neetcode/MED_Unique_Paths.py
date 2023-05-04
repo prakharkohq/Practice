@@ -8,6 +8,7 @@ right corner.
 
 The test cases are generated so that the answer will be less than or equal to 2 * 109.
 """
+from functools import cache
 
 """
 Time Complexity : O(2 ^ (m+n)), where m and n are the given input dimensions of the grid
