@@ -5,14 +5,14 @@ import collections
 
 
 def distanceK(self, root, target, K):
-    conn = collections.defaultdict(list)
+    relations = collections.defaultdict(list)
     def connect(parent, child):
         # both parent and child are not empty
         if parent and child:
             # building an undirected graph representation, assign the
             # child value for the parent as the key and vice versa
-            conn[parent.val].append(child.val)
-            conn[child.val].append(parent.val)
+            relations[parent.val].append(child.val)
+            relations[child.val].append(parent.val)
         # in-order traversal
         if child.left: connect(child, child.left)
         if child.right: connect(child, child.right)
@@ -26,7 +26,7 @@ def distanceK(self, root, target, K):
         # expand the list comprehension to strip away the complexity
         new_level = []
         for q_node_val in bfs:
-            for connected_node_val in conn[q_node_val]:
+            for connected_node_val in relations[q_node_val]:
                 if connected_node_val not in seen:
                     new_level.append(connected_node_val)
         bfs = new_level

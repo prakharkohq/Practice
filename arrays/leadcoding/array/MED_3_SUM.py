@@ -54,6 +54,10 @@ step 5 : kinhi 2 positive number ka sum agar negative number ke barabar aa jaaye
 
 Note : always insert triplets sorted in set to avoid repetation 
 
+Steps 1, 2, and 3 can all be done in linear time O(n), but steps 4 and 5 require quadratic time O(n2).
+But keep in mind that this is the worst-case scenario.
+When the quantity of negative and positive numbers is not skewed or there are duplicate numbers, the runtime will be reduced.
+
 """
 
 def solution_3Sum(nums):
