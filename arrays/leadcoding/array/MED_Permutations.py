@@ -77,6 +77,31 @@ def permute(nums):
         nums.append(n)
     return result
 
+class Solution:
+  def permute(self, nums) :
+    ans = []
+    used = [False] * len(nums)
+
+    def dfs(path) -> None:
+      if len(path) == len(nums):
+        ans.append(path.copy())
+        return
+
+      for i, num in enumerate(nums):
+        if used[i]:
+          continue
+        used[i] = True
+        path.append(num)
+        dfs(path)
+        path.pop()
+        used[i] = False
+
+    dfs([])
+    return ans
+
+
 if __name__ == "__main__":
-    print(permute_attempt([1,2,3]))
+    #print(permute_attempt([1,2,3]))
+    sol = Solution()
+    print(sol.permute([1,1,2]))
 

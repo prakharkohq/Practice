@@ -38,14 +38,16 @@ O(n) Solution
 
 # bucket sort jaisa hai ye
 def topKFrequent(nums, k):
+    # For Input -> [1000,1000,1000,2,2,3]
     count = {}
     freq = [[] for i in range(len(nums) + 1)]
-
+    # count --> {1000: 3, 2: 2, 3: 1}
     for n in nums:
         count[n] = 1 + count.get(n, 0)
     for n, c in count.items():
         freq[c].append(n)
-
+    # Freq --> [[], [3], [2], [1000], [], [], []]
+    # ab bas reverse mein bucket khaali karte jaao right se left mein
     res = []
     for i in range(len(freq) - 1, 0, -1):
         for n in freq[i]:
@@ -58,4 +60,4 @@ def topKFrequent(nums, k):
 
 if __name__ == "__main__":
     print("Top K frequent element")
-    print(topKFrequent([1,1,1,2,2,3], 3))
+    print(topKFrequent([1000,1000,1000,2,2,3], 3))
