@@ -120,3 +120,4 @@ def solution(nums):
 if __name__ == "__main__":
     sol = Solution()
     print(sol.maxContiguousSubarraySum([5,4,-1,7,8]))
+
